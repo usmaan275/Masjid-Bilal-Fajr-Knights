@@ -36,3 +36,92 @@
     transform: rotate(360deg);
   }
 }
+
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100vw;
+  background-color: #0f172a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.spinner {
+  width: 8vw;
+  height: 8vw;
+  max-width: 80px;
+  max-height: 80px;
+  border: 0.8vw solid rgba(255, 255, 255, 0.2);
+  border-top: 0.8vw solid #38bdf8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 2dvh;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-screen p {
+  font-size: 2.5vw;
+  letter-spacing: 0.05em;
+}
+
+.home-container {
+  min-height: 100dvh;
+  width: 100vw;
+  background: linear-gradient(160deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+  padding: 5dvh 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-header {
+  margin-bottom: 5dvh;
+}
+
+.home-title {
+  font-size: 6vw;
+  margin-bottom: 1dvh;
+}
+
+.home-subtitle {
+  font-size: 3vw;
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2dvh;
+  width: 90vw;
+  max-width: 800px;
+}
+
+.home-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1.2rem;
+  padding: 3dvh 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.home-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #38bdf8;
+  transform: scale(1.05);
+}
