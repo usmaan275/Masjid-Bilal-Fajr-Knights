@@ -347,8 +347,7 @@ button {
 
 /* popup explanation (verse / translation / explanation) */
 .explain-popup {
-  width: 90%;
-  max-width: 900px;
+  width: 90vw;
   background: rgba(0,0,0,0.6);
   border-radius: 12px;
   padding: 1.6dvh 1.4vw;
@@ -367,6 +366,7 @@ button {
 .explain-popup .verse {
   font-size: 3vw;
   font-family: 'Scheherazade New';
+  direction: rtl;;
   font-weight:700;
   color: #f8fafc;
   text-align: center;

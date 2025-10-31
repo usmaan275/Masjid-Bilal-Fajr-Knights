@@ -1,90 +1,110 @@
 const day2Questions = [
-    {
-      question: "Who was Prophet Musa’s brother?",
-      options: [
-        "A) Prophet Harun",
-        "B) Prophet Yunus",
-        "C) Prophet Yahya",
-        "D) Prophet Yusuf"
-      ],
-      answer: "Prophet Harun",
-      verse: "‫ثُمَّ بَعَثۡنَا مِنۢ بَعۡدِهِم مُّوسَىٰ وَهَـٰرُونَ إِلَىٰ فِرۡعَوۡنَ وَمَلَإِی۟هِۦ بِـَٔایَـٰتِنَا‬",
-      translation: "We sent Musa and Harun to Pharaoh and his chiefs with Our signs. (10:75)",
-      explanation: "Musa and Harun were brothers and they were sent by Allah to preach to Firawn and his men."
-    },
-    {
-      question: "Which Prophet was sent to the nation of Thamud?",
-      options: ["A) Prophet Hud", "B) Prophet Shuayb", "C) Prophet Salih", "D) Prophet Lut"],
-      answer: "Prophet Salih",
-      verse: "وَإِلَىٰ ثَمُودَ أَخَاهُمۡ صَـٰلِحࣰا",
-      translation: "And to the people of Thamud We sent their brother Salih. (11:61)",
-      explanation: "Allah sent the Prophet Salih to the nation of Thamud."
-    },
-    {
-      question: "What brings reassurance to the heart?",
-      options: ["A) Gaming", "B) Football", "C) School", "D) The remembrance of Allah"],
-      answer: "The remembrance of Allah",
-      verse: "‫أَلَا بِذِكۡرِ ٱللَّهِ تَطۡمَىِٕنُّ ٱلۡقُلُوبُ﴿ ٢٨ ﴾‬",
-      translation: "Undoubtedly, hearts find comfort in the remembrance of Allah. (13:28)",
-      explanation: "Nothing brings comfort to the heart in this world, except when we remember our Lord Allah."
-    },
-    {
-      question: "How many gates does Jahannam (Hell) have?",
-      options: ["A) 5", "B) 6", "C) 7", "D) 8"],
-      answer: "7",
-      verse: "‫وَإِنَّ جَهَنَّمَ لَمَوۡعِدُهُمۡ أَجۡمَعِینَ﴿ ٤٣ ﴾ ‫لَهَا سَبۡعَةُ أَبۡوَ ٰ⁠بࣲ‬",
-      translation: "Indeed, Hell is all of their destined place. It has seven gates. (15:43-44)",
-      explanation: "The people that don’t remember Allah and listen to the Shaytan will be sent to Jahannam."
-    },
-    {
-      question: "Where did the Prophet ﷺ travel to on the night of Al-Isra wal-Miraj?",
-      options: ["A) Masjid Al-Aqsa", "B) Masjid Al-Haram", "C) Madinah", "D) Mount Uhud"],
-      answer: "Masjid Al-Aqsa",
-      verse: "‫سُبۡحَـٰنَ ٱلَّذِیۤ أَسۡرَىٰ بِعَبۡدِهِۦ لَیۡلࣰا مِّنَ ٱلۡمَسۡجِدِ ٱلۡحَرَامِ إِلَى ٱلۡمَسۡجِدِ ٱلۡأَقۡصَا‬",
-      translation: "Glory be to the One Who took His servant ˹Muhammad˺ by night from the Masjid Al-Haram to Masjid Al-Aqsa. (17:1)",
-      explanation: "On this special night Allah took the Prophet ﷺ from Makkah to Jerusalem, and from there he rose up to the Heavens."
-    },
-    {
-      question: "Which Prophet spoke as a baby in the cradle?",
-      options: ["A) Prophet Isa", "B) Prophet Yahya", "C) Prophet Musa", "D) Prophet Yusuf"],
-      answer: "Prophet Isa",
-      verse: "‫قَالُوا۟ كَیۡفَ نُكَلِّمُ مَن كَانَ فِی ٱلۡمَهۡدِ صَبِیࣰّا﴿ ٢٩ ﴾ ‫قَالَ إِنِّی عَبۡدُ ٱللَّهِ‬",
-      translation: "They exclaimed, “How can we talk to someone who is an infant in the cradle?” Isa declared, “I am truly a servant of Allah.” (19:29-30)",
-      explanation: "This was one of Prophet Isa’s many miracles. He performed all these miracles with the permission of Allah."
-    },
-    {
-      question: "Which Prophet had control of the wind?",
-      options: ["A) Prophet Dawud", "B) Prophet Musa", "C) Prophet Sulayman", "D) Prophet Isa"],
-      answer: "Prophet Sulayman",
-      verse: "‫وَلِسُلَیۡمَـٰنَ ٱلرِّیحَ عَاصِفَةࣰ تَجۡرِی بِأَمۡرِهِۦۤ‬",
-      translation: "And We gave Sulayman control of the raging winds, flowing by his command. (21:81)",
-      explanation: "Allah gifted Sulayman control of the wind as a gift, and he was very grateful to Allah for this power."
-    },
-    {
-      question: "What is the highest level of Jannah called?",
-      options: ["A) Al-Firdaws", "B) Al-Kawthar", "C) Al-Ma’wa", "D) Al-Adn"],
-      answer: "Al-Firdaws",
-      verse: "‫أُو۟لَـٰۤىِٕكَ هُمُ ٱلۡوَ ٰ⁠رِثُونَ﴿ ١٠ ﴾ ‫ٱلَّذِینَ یَرِثُونَ ٱلۡفِرۡدَوۡسَ هُمۡ فِیهَا خَـٰلِدُونَ﴿ ١١ ﴾‬",
-      translation: "These are the ones who will be awarded Al-Firdaws as their own. They will be there forever. (23:10-11)",
-      explanation: "In the beginning of this Surah, Allah describes good people and says these people will go to Al-Firdaws — the highest level of Jannah."
-    },
-    {
-      question: "Which Prophet had to help Ashab-ul-Aykah (the people of the forest)?",
-      options: ["A) Prophet Hud", "B) Prophet Salih", "C) Prophet Shuayb", "D) Prophet Lut"],
-      answer: "Prophet Shuayb",
-      verse: "‫كَذَّبَ أَصۡحَـٰبُ لۡـَٔیۡكَةِ ٱلۡمُرۡسَلِینَ﴿ ١٧٦ ﴾ ‫إِذۡ قَالَ لَهُمۡ شُعَیۡبٌ أَلَا تَتَّقُونَ﴿ ١٧٧ ﴾‬",
-      translation: "The residents of the Forest rejected the messengers when Shuayb said to them, “Will you not fear ˹Allah˺?” (26:176-177)",
-      explanation: "Prophet Shuayb warned the people of the forest to turn back to the worship of Allah."
-    },
-    {
-      question: "Which city did Prophet Musa flee to?",
-      options: ["A) Madyan", "B) Egypt", "C) Jerusalem", "D) Damascus"],
-      answer: "Madyan",
-      verse: "‫فَخَرَجَ مِنۡهَا خَاۤىِٕفࣰا یَتَرَقَّبُۖ قَالَ رَبِّ نَجِّنِی مِنَ ٱلۡقَوۡمِ ٱلظَّـٰلِمِینَ﴿ ٢١ ﴾ ‫وَلَمَّا تَوَجَّهَ تِلۡقَاۤءَ مَدۡیَنَ‬",
-      translation: "Musa left the city in a state of fear and caution, praying, “My Lord! Deliver me from the wrongdoing people.” And as he made his way towards Madyan… (28:21-22)",
-      explanation: "The chiefs of Firawn were looking for Musa and wanted to kill him, so he left Egypt and fled to an Arab land called Madyan."
-    }
-  ];
-  
-  export default day2Questions;
-  
+  {
+    question: "Whose corpse has been preserved as a sign for mankind?",
+    options: ["A) Firawn", "B) Namrud", "C) Abu Jahl", "D) Abu Lahab"],
+    answer: "Firawn",
+    verse: "فَٱلۡيَوۡمَ نُنَجِّیكَ بِبَدَنِكَ لِتَكُونَ لِمَنۡ خَلۡفَكَ ءَایَةࣰ",
+    translation:
+      "Today We will preserve your corpse so that you may become an example for those who come after you. (10:92)",
+    explanation:
+      "Allah preserved Firawn’s body to remind us all that no matter how much power, money, and fame someone has, Allah is the One Who is in control. He deals with all criminals, and no one can escpae His punishment.",
+  },
+  {
+    question: "Which Prophet was sent to the nation of Thamud?",
+    options: ["A) Hud", "B) Shuayb", "C) Salih", "D) Lut"],
+    answer: "Salih",
+    verse: "وَإِلَىٰ ثَمُودَ أَخَاهُمۡ صَـٰلِحࣰا",
+    translation: "And to the people of Thamud We sent their brother Salih. (11:61)",
+    explanation: "Allah sent Prophet Salih to the nation of Thamud.",
+  },
+  {
+    question: "What did Prophet Yusuf tell his brothers to do with his shirt?",
+    options: [
+      "A) Rip it up",
+      "B) Throw it in a well",
+      "C) Hide it",
+      "D) Throw it on his father’s face",
+    ],
+    answer: "D) Throw it on his father’s face",
+    verse:
+      "ٱذۡهَبُوا۟ بِقَمِیصِی هَـٰذَا فَأَلۡقُوهُ عَلَىٰ وَجۡهِ أَبِی یَأۡتِ بَصِیرࣰا",
+    translation:
+      "Go with this shirt of mine and cast it over my father’s face, then he will regain his sight. (12:92)",
+    explanation:
+      "Prophet Yaqub lost his eyesight from crying at the loss of his sons. So Allah gave Prophet Yusuf’s shirt the ability to restore his eyesight.",
+  },
+  {
+    question: "How many gates does Jahannam (Hell) have?",
+    options: ["A) 5", "B) 6", "C) 7", "D) 8"],
+    answer: "C) 7",
+    verse:
+      "وَإِنَّ جَهَنَّمَ لَمَوۡعِدُهُمۡ أَجۡمَعِینَ﴿ ٤٣ ﴾ لَهَا سَبۡعَةُ أَبۡوَ ٰ⁠بࣲ",
+    translation: "Indeed, Hell is all of their destined place. It has seven gates. (15:43-44)",
+    explanation:
+      "Jannah has 8 gates, while Jahannam only has 7 gates.",
+  },
+  {
+    question: "How many years did the Ashab-ul-Kahf (Companions of the Cave) sleep for?",
+    options: ["A) 309", "B) 311", "C) 313", "D) 315"],
+    answer: "A) 309",
+    verse:
+      "وَلَبِثُوا۟ فِی كَهۡفِهِمۡ ثَلَـٰثَ مِا۟ئَةࣲ سِنِینَ وَٱزۡدَادُوا۟ تِسۡعࣰا﴿٢٥﴾",
+    translation:
+      "They had remained in their cave for three hundred years plus nine. (18:25)",
+    explanation: "They stayed in the cave for 309 years.",
+  },
+  {
+    question: "Which ruler trapped Ya'juj and Ma'juj?",
+    options: ["A) Dhul-Qarnayn", "B) Sulayman", "C) Dawud", "D) Nimrod"],
+    answer: "Dhul-Qarnayn",
+    verse:
+      "قَالُوا۟ یَـٰذَا ٱلۡقَرۡنَیۡنِ إِنَّ یَأۡجُوجَ وَمَأۡجُوجَ مُفۡسِدُونَ فِی ٱلۡأَرۡضِ فَهَلۡ نَجۡعَلُ لَكَ خَرۡجًا عَلَىٰۤ أَن تَجۡعَلَ بَیۡنَنَا وَبَیۡنَهُمۡ سَدࣰّا﴿٩٤﴾",
+    translation:
+      "They pleaded, \"O Dhul-Qarnayn! Indeed, Ya'juj and Ma'juj are spreading corruption. Can we pay you to build a barrier between us and them?\" (18:94)",
+    explanation:
+      "Dhul-Qarnayn built a barrier to contain Ya'juj and Ma'juj, keeping them hidden to this day.",
+  },
+  {
+    question: "Who was the grandson of Prophet Ibrahim?",
+    options: ["A) Ismail", "B) Ishaq", "C) Yaqub", "D) Yusuf"],
+    answer: "Yaqub",
+    verse: "وَوَهَبۡنَا لَهُۥ إِسۡحَـٰقَ وَیَعۡقُوبَ نَافِلَةࣰ",
+    translation:
+      "And We blessed Ibrahim with Ishaq ˹as a son˺ and, additionally, Yaqub ˹as a grandson˺. (21:72)",
+    explanation:
+      "Prophet Ibrahim had two sons who were Prophets—Prophet Ismail and Prophet Ishaq. Prophet Ishaq’s son was Prophet Yaqub, and Prophet Yaqub’s son was Prophet Yusuf.",
+  },
+  {
+    question: "Who was Prophet Musa’s brother?",
+    options: ["A) Harun", "B) Yunus", "C) Yahya", "D) Yusuf"],
+    answer: "Harun",
+    verse: "ثُمَّ أَرۡسَلۡنَا مُوسَىٰ وَأَخَاهُ هَـٰرُونَ",
+    translation: "Then We sent Musa and his brother Harun. (23:45)",
+    explanation:
+      "Allah sent Prophet Musa along with his brother Prophet Harun to Firawn and his people.",
+  },
+  {
+    question: "Which Prophet had to help Ashab-ul-Aykah (the people of the forest)?",
+    options: ["A) Shuayb", "B) Musa", "C) Nuh", "D) Salih"],
+    answer: "Shuayb",
+    verse:
+      "كَذَّبَ أَصۡحَـٰبُ لۡـَٔیۡكَةِ ٱلۡمُرۡسَلِینَ﴿١٧٦﴾ إِذۡ قَالَ لَهُمۡ شُعَیۡبٌ أَلَا تَتَّقُونَ﴿١٧٧﴾",
+    translation:
+      "The residents of the Forest rejected the messengers when Shuayb said, \"Will you not fear Allah?\" (26:176-177)",
+    explanation:
+      "Prophet Shuayb warned the people of the forest to turn back to the worship of Allah.",
+  },
+  {
+    question: "Which city did Prophet Musa flee to?",
+    options: ["A) Makkah", "B) Madyan", "C) Jerusalem", "D) Tih"],
+    answer: "Madyan",
+    verse:
+      "فَخَرَجَ مِنۡهَا خَاۤىِٕفࣰا یَتَرَقَّبُۖ قَالَ رَبِّ نَجِّنِی مِنَ ٱلۡقَوۡمِ ٱلظَّـٰلِمِینَ﴿٢١﴾ وَلَمَّا تَوَجَّهَ تِلۡقَاۤءَ مَدۡیَنَ",
+    translation:
+      "Musa left the city in fear and prayed, \"My Lord! Save me from the wrongdoing people.\" As he made his way towards Madyan ... (28:21-22)",
+    explanation:
+      "The chiefs of Firawn were looking for Musa to kill him, so he left Egypt and fled to an Arab city called Madyan.",
+  },
+];
+
+export default day2Questions;
