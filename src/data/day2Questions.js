@@ -7,7 +7,7 @@ const day2Questions = [
     translation:
       "Today We will preserve your corpse so that you may become an example for those who come after you. (10:92)",
     explanation:
-      "Allah preserved Firawn’s body to remind us all that no matter how much power, money, and fame someone has, Allah is the One Who is in control. He deals with all criminals, and no one can escpae His punishment.",
+      "Allah preserved Firawn’s body to remind us all that no matter how much power, money, and fame someone has, Allah is the One Who is in control. He deals with all criminals, and no one can escape His punishment.",
   },
   {
     question: "Which Prophet was sent to the nation of Thamud?",
