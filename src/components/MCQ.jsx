@@ -67,7 +67,7 @@ function MCQ({ questions = [], title = "Fajr Knights — Quiz" }) {
 
     // reset any previous
     clearInterval(timerRef.current);
-    setTimer(15);
+    setTimer(12);
     timerRef.current = setInterval(() => {
       setTimer((prev) => {
         if (prev <= 1) {
