@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import MCQ from "./components/MCQ";
 import day1Questions from "./data/day1Questions";
+import day2Questions from "./data/day2Questions";
 import LoadingScreen from "./components/LoadingScreen";
 import usePreloadImages from "./hooks/usePreloadImages";
 import './App.css';
@@ -27,9 +28,11 @@ function App() {
           path="/day1"
           element={<MCQ questions={day1Questions} title="Day 1 Quiz" />}
         />
+        <Route
+          path="/day2"
+          element={<MCQ questions={day2Questions} title="Day 2 Quiz" />}
+        />
 
-        {/* You can add more days like this */}
-        {/* <Route path="/day2" element={<MCQ questions={day2Questions} title="Day 2 Quiz" />} /> */}
       </Routes>
     </BrowserRouter>
   );
