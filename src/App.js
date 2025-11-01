@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import MCQ from "./components/MCQ";
 import day1Questions from "./data/day1Questions";
 import day2Questions from "./data/day2Questions";
+import day3Questions from "./data/day3Questions";
 import LoadingScreen from "./components/LoadingScreen";
 import usePreloadImages from "./hooks/usePreloadImages";
 import './App.css';
@@ -23,7 +24,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
 
-        {/* Day 1 Quiz */}
+        {/* Day x Quiz */}
         <Route
           path="/day1"
           element={<MCQ questions={day1Questions} title="Day 1 Quiz" />}
@@ -31,6 +32,10 @@ function App() {
         <Route
           path="/day2"
           element={<MCQ questions={day2Questions} title="Day 2 Quiz" />}
+        />
+        <Route
+          path="/day3"
+          element={<MCQ questions={day3Questions} title="Day 3 Quiz" />}
         />
 
       </Routes>

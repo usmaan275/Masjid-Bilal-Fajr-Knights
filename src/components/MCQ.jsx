@@ -67,7 +67,7 @@ function MCQ({ questions = [], title = "Fajr Knights — Quiz" }) {
 
     // reset any previous
     clearInterval(timerRef.current);
-    setTimer(12);
+    setTimer(15);
     timerRef.current = setInterval(() => {
       setTimer((prev) => {
         if (prev <= 1) {
@@ -95,15 +95,12 @@ function MCQ({ questions = [], title = "Fajr Knights — Quiz" }) {
   };
 
   const letterToOption = (q, letter) => {
-    // letter is "A"/"B"/"C"/"D"
     const map = { A: 0, B: 1, C: 2, D: 3 };
     const idx = map[letter];
     if (idx == null || !q.options[idx]) return "";
-    // option format might be "A - Prophet Nuh" -> return the part after " - " or whole string if not present
-    const full = q.options[idx];
-    const parts = full.split(" - ");
-    return parts.length > 1 ? parts.slice(1).join(" - ").trim() : full;
+    return q.options[idx].trim(); // keep "A) Firawn"
   };
+  
 
   const handleTeamPick = (team, letter) => {
     if (revealed) return; // can't change after reveal
@@ -295,7 +292,6 @@ function MCQ({ questions = [], title = "Fajr Knights — Quiz" }) {
               return (
                 <div key={team} className={`reveal-team ${correct ? "correct" : "incorrect"}`}>
                   <div className="reveal-team-name">{team}</div>
-                  <div className="reveal-team-pick">Picked: {picked || "-"}</div>
                   <div className="reveal-team-text">{chosenText}</div>
                 </div>
               );

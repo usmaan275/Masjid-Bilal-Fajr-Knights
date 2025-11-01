@@ -172,8 +172,7 @@ button {
 .team-list {
   display: grid;
   gap: 1dvh;
-  width: 100%;
-  max-width: 1000px;
+  width: 90vw;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, auto);
 }
@@ -181,7 +180,6 @@ button {
 .team-item {
   display: flex;
   gap: 1vw;
-  width: 16vw;
   height: 27dvh;
   align-items: center;
   background: rgba(255,255,255,0.04);
@@ -211,7 +209,7 @@ button {
   border-radius: 12px;
   color: #0f172a;
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .start-button[disabled] {
@@ -293,7 +291,6 @@ button {
   display: grid;
   gap: 1.2dvh;
   width: 90vw;
-  height: 45dvh;
 }
 
 .team-card {
@@ -399,22 +396,21 @@ button {
 .reveal-button[disabled] { opacity: 0.5; cursor: not-allowed; }
 
 .scoreboard {
-  width: 100%;
-  max-width: 800px;
+  width: 90vw;
   margin: 0 auto;
   text-align: center;
 }
 
-.score-list { margin-top: 1.6dvh; display:flex; flex-direction:column; gap: 1dvh; }
+.score-list { margin-top: 1.6dvh; display:flex; flex-direction:column; gap: 2dvh; }
 .score-row { display:flex; justify-content:space-between; padding: 1dvh 1vw; background: rgba(255,255,255,0.03); border-radius:8px; }
-.score-team { font-weight:700; font-size: 2.6vw; }
-.score-num { font-weight:900; font-size: 2.6vw; }
+.score-team { font-weight:700; font-size: 2.2vw; }
+.score-num { font-weight:900; font-size: 2.2vw; }
 
 .home-button {
-  margin-top: 2dvh;
+  margin-top: 10dvh;
   padding: 1.6dvh 3.5vw;
   background: rgba(255,255,255,0.06);
   border-radius: 10px;
-  font-size: 2.8vw;
+  font-size: 2vw;
   color: #fff;
 }
