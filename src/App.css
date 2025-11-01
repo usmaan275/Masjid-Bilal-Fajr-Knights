@@ -401,16 +401,16 @@ button {
   text-align: center;
 }
 
-.score-list { margin-top: 1.6dvh; display:flex; flex-direction:column; gap: 2dvh; }
-.score-row { display:flex; justify-content:space-between; padding: 1dvh 1vw; background: rgba(255,255,255,0.03); border-radius:8px; }
+.score-list { margin-top: 1.6dvh; display:flex; flex-direction:column; gap: 1.2dvh; }
+.score-row { display:flex; justify-content:space-between; padding: 2.4dvh 1vw; background: rgba(255,255,255,0.03); border-radius:8px; }
 .score-team { font-weight:700; font-size: 2.2vw; }
 .score-num { font-weight:900; font-size: 2.2vw; }
 
 .home-button {
-  margin-top: 10dvh;
+  margin-top: 5dvh;
   padding: 1.6dvh 3.5vw;
   background: rgba(255,255,255,0.06);
   border-radius: 10px;
-  font-size: 2vw;
+  font-size: 1.8vw;
   color: #fff;
 }
