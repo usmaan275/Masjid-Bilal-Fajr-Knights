@@ -158,7 +158,7 @@ button {
 .mcq-title {
   flex: 1;
   text-align: center;
-  font-size: 4vw;
+  font-size: 3.5vw;
   margin: 0;
 }
 
@@ -263,6 +263,22 @@ button {
   background: rgba(255,255,255,0.04);
   border-radius: 8px;
   font-size: 2.2vw;
+}
+
+.skip-button {
+  padding: 1dvh 2vw;
+  border-radius: 8px;
+  background: #38bdf8;
+  border-radius: 10px;
+  color: #0f172a;
+  font-size: 1.2vw;
+  font-weight: 700;
+  margin-top: 1dvh;
+  cursor: pointer;
+}
+
+.skip-button:hover {
+  background: #2d96c4;
 }
 
 /* Select teams grid */
@@ -413,4 +429,23 @@ button {
   border-radius: 10px;
   font-size: 1.8vw;
   color: #fff;
+}
+
+/* Slightly smaller height for phones */
+@media screen and (orientation: portrait) {
+  .back-button {
+    top: 0.5rem;
+    left: 0.5rem;
+    padding: 0.6dvh 2vw;
+    font-size: 3vw;
+  }
+
+  .team-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .team-item {
+    height: 12dvh;
+  }
 }

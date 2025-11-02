@@ -8,7 +8,7 @@ function Home() {
   <div className="home-container">
   <header className="home-header">
   <h1 className="home-title">🏰 Fajr Knights Programme</h1>
-  <h2 className="home-subtitle">Masjid Noor, Luton</h2>
+  <h2 className="home-subtitle">Masjid Bilal, Luton</h2>
   </header>
 
     <div className="home-grid">

@@ -61,13 +61,21 @@ function MCQ({ questions = [], title = "Fajr Knights — Quiz" }) {
     setTimer(10);
   };
 
+  // Function to skip timer instantly
+  const skipTimer = () => {
+    clearInterval(timerRef.current);
+    setTimer(0);
+    setStage("selectTeams");
+  };
+
   // Timer effect for mashwarah period
   useEffect(() => {
     if (stage !== "question") return;
 
     // reset any previous
     clearInterval(timerRef.current);
-    setTimer(15);
+    // Change timer duration here
+    setTimer(20);
     timerRef.current = setInterval(() => {
       setTimer((prev) => {
         if (prev <= 1) {
@@ -221,6 +229,9 @@ function MCQ({ questions = [], title = "Fajr Knights — Quiz" }) {
               </div>
             </div>
           </div>
+          <button className="skip-button" onClick={skipTimer}>
+              Skip Timer
+          </button>
         </div>
       )}
 
