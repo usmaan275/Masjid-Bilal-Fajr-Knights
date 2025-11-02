@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    document.title = "MBFK Quiz";
+  }, []);
+  
   // Create an array of 3 days dynamically
   const days = Array.from({ length: 3 }, (_, i) => i + 1);
 
